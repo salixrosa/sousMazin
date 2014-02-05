@@ -597,6 +597,10 @@ License URI: http://www.wtfpl.net
 		color: #BABABA;
 	}/* Font Awesome icons accessed via i classes; this is padding for those icons. */
 
+	footer a i {
+		color: black;
+	}
+
 	footer p#media a:hover {
 		color: black; /* I haven't written the WordPress code that makes this relevant yet */
 	}
