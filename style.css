@@ -456,6 +456,9 @@ License URI: http://www.wtfpl.net
 
 			min-width: 100px; /*This is to try to avoid anything really ugly when it comes to floating code or lists*/
 		}
+		.content a {
+			text-decoration: underline;
+		}
 		#last {
 			margin-bottom: 0;
 		}
