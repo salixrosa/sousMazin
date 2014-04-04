@@ -19,16 +19,6 @@ License URI: http://www.wtfpl.net
 			font-family: inherit;
 	}
 
-	/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
-	@font-face {
-		font-family: Code2000;
-		src:
-			url('CODE2000.eot'),
-			url('CODE2000.woff'),
-			url('CODE2000.ttf'),
-			url('CODE2000.svg#Code2000');
-		}
-
 /*Body Styles*/
 	body {
 		/* This is used to make rem relative to a happy pt # */
