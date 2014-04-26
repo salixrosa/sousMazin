@@ -32,6 +32,12 @@
 		?>
 	</div>
 
+	<?php
+		if ( comments_open() && is_singular() ) {
+			comments_template();
+		}
+	?>
+
 	<div class="clear">
 	</div>
 
