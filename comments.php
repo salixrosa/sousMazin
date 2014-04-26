@@ -14,7 +14,7 @@
 				$number = wp_count_comments();
 				$text = "";
 				$plural = "";
-				$number = $number->total_comments;
+				$number = $number->approved;
 				if ($number == 1) {
 					$text = 'There is';
 					$plural = 'comment';
@@ -44,7 +44,7 @@
 				$args = [
 					'fields' => '',
 					'comment_notes_before' => '',
-					'comment_field' => '<textarea id="comment"></textarea>',
+					'comment_field' => '<textarea id="comment" name="comment"></textarea>',
 					'comment_notes_after' => '',
 					'title_reply' => '',
 				];
