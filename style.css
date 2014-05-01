@@ -588,7 +588,11 @@ p.commenttext {
  }
 
  #respond {
+ 	position: relative;
  	padding-top: 2rem;
+ 	padding-bottom: 2rem;
+ 	margin-bottom: 2rem;
+ 	border-bottom: dotted 1px #BABABA;
  }
 
  #reply-title {
@@ -602,7 +606,61 @@ p.commenttext {
  #submit {
  	border: none;
  	border: dotted 1px #BABABA;
- 	margin-top: 1rem;
+ 	margin-top: .5rem;
+ }
+
+ .logged-in-as {
+ 	position: absolute;
+ 	width: auto;
+ 	left: 0;
+ 	bottom: 1.5rem;
+ 	margin: 0;
+ 	padding-bottom: .5rem;
+ }
+
+ li.comment {
+ 	position: relative;
+ 	text-shadow: none;
+ }
+
+ li.comment > ul {
+ 	padding-left: 1rem;
+ 	padding-top: 1.5rem;
+ 	padding-bottom: 2rem;
+ }
+
+ div.comment-author {
+ 	display: inline-block;
+ 	width: auto;
+ 	border-bottom: dotted 1px #BABABA;
+ }
+
+ div.comment-meta {
+ 	color: #BEBEBE;
+ 	position: absolute;
+ 	bottom: -.5rem;
+ 	border-bottom: dotted 1px #C3C3C3;
+ 	padding: .1rem;
+ 	width: 100%;
+ 	letter-spacing: .1rem;
+ }
+
+
+ div.comment-body {
+ 	position: relative;
+ 	padding-bottom: 1.5rem;
+ }
+
+ div.comment-body > p {
+ 	padding: .5rem 0 0 .5rem;
+ 	color: black;
+ }
+
+ div.reply {
+ 	position: absolute;
+ 	bottom: -.4rem;
+ 	right: 0;
+ 	font-style: italic;
  }
 
 /* Footer Stuff */
