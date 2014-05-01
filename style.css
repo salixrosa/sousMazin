@@ -613,7 +613,7 @@ p.commenttext {
  	position: absolute;
  	width: auto;
  	left: 0;
- 	bottom: 1.5rem;
+ 	bottom: 0rem;
  	margin: 0;
  	padding-bottom: .5rem;
  }
@@ -621,12 +621,20 @@ p.commenttext {
  li.comment {
  	position: relative;
  	text-shadow: none;
+ 	padding-bottom: 2rem;
+ }
+
+ li.comment {
+ 	border-left: dotted 1px #BABABA;
+ }
+
+ li.parent {
+ 	padding-bottom: 0 !important;
  }
 
  li.comment > ul {
  	padding-left: 1rem;
  	padding-top: 1.5rem;
- 	padding-bottom: 2rem;
  }
 
  div.comment-author {
