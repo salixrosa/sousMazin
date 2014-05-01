@@ -435,6 +435,9 @@ License URI: http://www.wtfpl.net
 			font-weight: normal;
 			letter-spacing: 0.2rem;
 		}
+		#more a {
+			text-decoration: none;
+		}
 		.content p {
 
 			font-size: .8rem;
