@@ -600,7 +600,9 @@ p.commenttext {
  }
 
  #submit {
- 	border-radius: 0;
+ 	border: none;
+ 	border: dotted 1px #BABABA;
+ 	margin-top: 1rem;
  }
 
 /* Footer Stuff */
