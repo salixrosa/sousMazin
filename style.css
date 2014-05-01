@@ -558,7 +558,7 @@ License URI: http://www.wtfpl.net
 /* Comments */
  .discussion {
  	border-top: dotted 1px #BABABA;
- 	margin-top: 8rem;
+ 	margin-top: 3rem;
  	padding-top: .5rem;
  	font-size: .8rem;
  	font-family: serif;
@@ -590,9 +590,6 @@ p.commenttext {
  #respond {
  	position: relative;
  	padding-top: 2rem;
- 	padding-bottom: 2rem;
- 	margin-bottom: 2rem;
- 	border-bottom: dotted 1px #BABABA;
  }
 
  #reply-title {
