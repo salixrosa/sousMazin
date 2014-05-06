@@ -438,6 +438,10 @@ License URI: http://www.wtfpl.net
 		#more a {
 			text-decoration: none;
 		}
+
+		#more:hover {
+			color: black;
+		}
 		.content p {
 
 			font-size: .8rem;
@@ -502,7 +506,7 @@ License URI: http://www.wtfpl.net
 				letter-spacing: .2rem;
 				margin-top: 1rem;
 				padding-top: 0rem;
-				border-style: solid;
+				border-style: dotted;
 				border-width: 1px 0 0 0;
 				color: #AAAAAA;
 				text-align: center;
