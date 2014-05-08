@@ -64,6 +64,18 @@ code #caption {
 	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
+pre.landscape {
+	margin-top: -1rem;
+}
+pre.landscape, code.landscape {
+	display: block;
+	width: 100%;
+	border: none;
+}
+code.landscape > span#caption {
+	padding-right: 0;
+}
+
 
 @media only screen and (max-width: 45em) {
 	pre, pre code {

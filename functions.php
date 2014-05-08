@@ -45,7 +45,7 @@ add_filter( 'wp_page_menu_args', 'home_page_menu_args' );
 
 function seesyntax( $text ) {
   $preblocks = array("<pre class='portrait'>", "<pre class='landscape'>", "</pre>");
-  $highlightblocks = array("<pre><code class='portrait'>", "<pre><code class='landscape'>", "</code></pre>");
+  $highlightblocks = array("<pre class='portrait'><code class='portrait'>", "<pre class='landscape'><code class='landscape'>", "</code></pre>");
   $text = str_replace($preblocks, $highlightblocks, $text);
   return $text;
 }
