@@ -1,8 +1,11 @@
 /* This code is messy and needs to be cleaned up */
 
 pre, pre code {
-	display: inline-block;
 	float: left;
+}
+
+pre.landscape, pre code.landscape {
+	float: none;
 }
 
 pre {
