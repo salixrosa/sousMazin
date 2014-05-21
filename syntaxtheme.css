@@ -1,14 +1,14 @@
 /* This code is messy and needs to be cleaned up */
 
-pre, pre code {
+pre {
 	float: left;
 }
 
-pre.landscape, pre code.landscape {
+pre.landscape {
 	float: none;
 }
 
-pre {
+code.portrait {
 	border-style: dotted;
 	border-width: 0px 1px 1px 0px;
 	border-color: #BABABA;
@@ -56,40 +56,11 @@ code .comment {
 	opacity: .6;
 }
 
-
 code > span#caption {
 	margin-top: .2rem;
 	padding-top: .5rem;
-	padding-right: .5rem; //This must match the code.block right padding so borders meet.
 }
 
 code #caption {
 	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
-
-pre.landscape {
-	margin-top: -1rem;
-}
-pre.landscape, code.landscape {
-	display: block;
-	width: 100%;
-	border: none;
-}
-code.landscape > span#caption {
-	padding-right: 0;
-}
-
-
-@media only screen and (max-width: 45em) {
-	pre, pre code {
-		display: block;
-		float: none;
-		width: 100%;
-		padding: 0;
-		margin: 10px 0 20px 0;
-	}
-
-	pre code{
-		white-space: pre-wrap;
-		box-shadow: none;
-	}
