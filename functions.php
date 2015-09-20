@@ -34,4 +34,8 @@ function sousMazin_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'sousMazin_scripts' );
 
+function sousmazin_filter_title($title){
+  return strip_tags(html_entity_decode($title));
+}
+add_filter('wp_title', 'sousmazin_filter_title');
 ?>
