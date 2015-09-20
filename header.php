@@ -19,7 +19,7 @@
 	<body <?php body_class(); ?>>
 		<div id="center">
 			<header>
-				<div id="sitename"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></div>
+				<div id="sitename"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo htmlspecialchars_decode(get_bloginfo('name')); ?></a></div>
 				<div id="headerfloat">
 					<nav>
 						<?php

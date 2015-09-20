@@ -65,8 +65,11 @@ License URI: http://www.wtfpl.net
 	#sitename {
 		/* Gorgeous banner/header! */
 		font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-		font-size: 6rem;
+		font-size: 3.5rem;
 		text-shadow: 2px 2px 4px #BABABA;
+	}
+	#sitename span {
+		font-size: 1.75em;
 	}
 	#headerfloat {
 		padding-top: 1.3rem;
