@@ -23,7 +23,7 @@
 			if ( $post->post_excerpt && !is_single() )
 			{
 				the_excerpt();
-				echo "<a href=" . get_permalink() . "><div class='more'>Continue reading " . "\"" . ucwords(get_the_title()) . "\"" . "</div></a>" ;
+				echo "<a href=\"" . get_permalink() . "\" class=\"nounderline\" ><div class='more'>Continue reading " . "\"" . ucwords(get_the_title()) . "\"" . "</div></a>" ;
 			}
 			else {
 				the_content("<div class='more'>Continue reading " . "\"" . ucwords(get_the_title()) . "\"" . "</div>");

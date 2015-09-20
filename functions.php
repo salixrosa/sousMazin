@@ -30,7 +30,7 @@ add_action( 'after_setup_theme', 'sousMazin_setup' );
 
 function sousMazin_scripts() {
 	wp_enqueue_style( 'sousMazin_style', get_stylesheet_uri(), array(), '20150920' );
-	wp_enqueue_style( 'fontawesomeCDN', "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", array(), '20150920' );
+	wp_enqueue_style( 'fontawesomeCDN', "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" );
 }
 add_action( 'wp_enqueue_scripts', 'sousMazin_scripts' );
 

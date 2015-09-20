@@ -67,15 +67,11 @@ License URI: http://www.wtfpl.net
 		font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 		font-size: 6rem;
 		text-shadow: 2px 2px 4px #BABABA;
-		/* Helps keep things in line. Changing this changes the vertical position of the #sitename text*/
-		line-height: 4rem;
 	}
 	#headerfloat {
-		/* Lines up nav with #sitename prettily */
-		padding-top: 1.3rem; /* If size of #sitename is changed, this # needs to be changed too */
+		padding-top: 1.3rem;
 	}
 	nav {
-		/* Apparently I've done in with nearly all usage of sans-serif fonts in this design! */
 		font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 		color: #898989;
 		font-size: 1.1rem;
@@ -159,17 +155,8 @@ License URI: http://www.wtfpl.net
 
 /*Main Header Positioning*/
 
-	header {
-		/* This effectively means we're using the parent div's centering */
-		width: 100%;
-		/* This allows child divs to use it for relative or absolute positioning */
-		position: relative;
-	}
-	#headerfloat { /* Exists so the tagline can be centered to the nav */
-		/* Takes div out of flow & allows for easier positioning relative to header div */
-		position: absolute;
-		right: 0;
-		top: 0;
+	#headerfloat {
+		text-align: center;
 	}
 	nav > ul > li{
 		/* Keep's 'em in line!*/
@@ -192,16 +179,6 @@ License URI: http://www.wtfpl.net
 	}
 
 	@media only screen and (max-width: 45em) {
-		#sitename {
-			/* For centering */
-			display: block;
-		}
-		#headerfloat {
-			/* Brings element back into flow at block-level & therefore full width */
-			position: relative;
-			/* Keeps the nav centered */
-			text-align: center;
-		}
 		nav {
 			/* Keeps the nav from collapsing */
 			display: inline-block;
@@ -406,7 +383,7 @@ License URI: http://www.wtfpl.net
 			text-align: right;
 		}
 
-		#more {
+		.more {
 			padding-top: 1rem;
 		}
 		@media only screen and (max-width: 45em) {
@@ -429,21 +406,22 @@ License URI: http://www.wtfpl.net
 			font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 			color: #575757;
 		}
-		.date, #more {
-			color: #BABABA;
+
+		.date, .more {
+			color: #5A5A5A;
 			font-size: 0.7rem;
 			font-weight: normal;
 			letter-spacing: 0.2rem;
 		}
-		#more a {
+		a .more {
 			text-decoration: none;
 		}
 
-		#more:hover {
-			color: black;
+		.content a.nounderline {
+			text-decoration: none;
 		}
-		.content p {
 
+		.content p {
 			font-size: .8rem;
 			letter-spacing: .1rem;
 			color: #575757;
@@ -531,7 +509,6 @@ License URI: http://www.wtfpl.net
 				font-weight: lighter;
 				font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 				font-size: 1.2em;
-				padding-left: 1em;
 			}
 
 			h3 {
@@ -562,152 +539,35 @@ License URI: http://www.wtfpl.net
 				text-indent: -5px;
 			}
 
-/* Comments */
- .discussion {
- 	border-top: dotted 1px #BABABA;
- 	margin-top: 3rem;
- 	padding-top: .5rem;
- 	font-size: .8rem;
- 	font-family: serif;
- 	color: #575757;
- 	letter-spacing: .2rem;
- }
-
- .comments p {
- 	display: inline-block;
- 	width: 49%;
- 	padding: 0;
- 	padding-bottom: .5rem;
- 	margin: 0;
- 	border-bottom: dotted 1px #BABABA;
- }
-
-p.commenttext {
-	text-align: right;
- 	width: 50%;
- }
-
- textarea#comment {
- 	width: 99%;
- 	max-width: 99%;
- 	height: 7rem;
- 	border: none;
- }
-
- #respond {
- 	position: relative;
- 	padding-top: 2rem;
- }
-
- #reply-title {
- 	display: none;
- }
-
- .form-submit {
- 	text-align: right;
- }
-
- #submit {
- 	border: none;
- 	border: dotted 1px #BABABA;
- 	margin-top: .5rem;
- }
-
- .logged-in-as {
- 	position: absolute;
- 	width: auto;
- 	left: 0;
- 	bottom: 0rem;
- 	margin: 0;
- 	padding-bottom: .5rem;
- }
-
- li.comment {
- 	position: relative;
- 	text-shadow: none;
- 	padding-bottom: 2rem;
- }
-
- li.comment {
- 	border-left: dotted 1px #BABABA;
- }
-
- li.parent {
- 	padding-bottom: 0 !important;
- }
-
- li.comment > ul {
- 	padding-left: 1rem;
- 	padding-top: 1.5rem;
- }
-
- div.comment-author {
- 	display: inline-block;
- 	width: auto;
- 	border-bottom: dotted 1px #BABABA;
- }
-
- div.comment-meta {
- 	color: #BEBEBE;
- 	position: absolute;
- 	bottom: -.5rem;
- 	border-bottom: dotted 1px #C3C3C3;
- 	padding: .1rem;
- 	width: 100%;
- 	letter-spacing: .1rem;
- }
-
-
- div.comment-body {
- 	position: relative;
- 	padding-bottom: 1.5rem;
- }
-
- div.comment-body > p {
- 	padding: .5rem 0 0 .5rem;
- 	color: black;
- }
-
- div.reply {
- 	position: absolute;
- 	bottom: -.4rem;
- 	right: 0;
- 	font-style: italic;
- }
-
 /* Footer Stuff */
 
 	footer {
 		position: absolute;
 		bottom: 0;
-		width: 95%;
-		left: 2.5%;
+		width: 90%;
+		left: 5%;
 
 		text-align: center;
 		border-style: dotted;
 		border-width: 1px 0 0 0;
-		border-color: #BABABA;
 
 		padding: .5em 0 3em 0;
-		height: 50px;
 
-		font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-		font-size: 1.4rem;
-		letter-spacing: .2em;
-		color: black;
+		color: #BABABA;
 	}
 
 	footer p{
-		padding: .5em 1em;
-		color: #BABABA;
+		font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+		font-size: 1rem;
+		letter-spacing: 2px;
 	}
 
-	footer i {
-		font-size: .7em;
-		padding: 0 .8em;
-		color: #BABABA;
-	}/* Font Awesome icons accessed via i classes; this is padding for those icons. */
+	#media li {
+		display: inline-block;
+		font-size: 1.5rem;
+		padding: 1.5rem .5rem;
+	}
 
-	footer a i {
-		color: black;
+	#media li:hover {
+		color: #247A9B;
 	}
