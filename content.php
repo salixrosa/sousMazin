@@ -14,7 +14,7 @@
 
 		<?php if ( $post->post_type == "post" ): ?>
 			<div class="date">
-				<?php the_time(); ?>
+				<?php echo get_the_date(); ?>
 			</div>
 		<?php endif; ?>
 
