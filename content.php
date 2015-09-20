@@ -2,43 +2,33 @@
 /**
  * @package Wordpress
  * @subpackage sousMazin
- * @since sousMazin 0
+ * @since sousMazin 1.0
  */
 ?>
 
-<article <?php if( !more_posts() ) {echo "id=last";} ?> >
+<article>
 
-		<div class="title">
+		<h2 class="title">
 			<a href="<?php echo get_permalink(); ?>"><?php the_title();?></a>
-		</div>
-
+		</h2>
 
 		<?php if ( $post->post_type == "post" ): ?>
 			<div class="date">
-				<?php the_date(); ?>
+				<?php the_time(); ?>
 			</div>
 		<?php endif; ?>
 
 	<div class="content">
-		<?php 
-			if ( $post->post_excerpt !== "" && !is_singular())
+		<?php
+			if ( $post->post_excerpt && !is_single() )
 			{
 				the_excerpt();
-				echo my_custom_more_text();
+				echo "<a href=" . get_permalink() . "><div class='more'>Continue reading " . "\"" . ucwords(get_the_title()) . "\"" . "</div></a>" ;
 			}
 			else {
-				the_content(my_custom_more_text());
+				the_content("<div class='more'>Continue reading " . "\"" . ucwords(get_the_title()) . "\"" . "</div>");
 			}
 		?>
-	</div>
-
-	<?php
-		if ( comments_open() && is_singular() ) {
-			comments_template();
-		}
-	?>
-
-	<div class="clear">
 	</div>
 
 </article>
