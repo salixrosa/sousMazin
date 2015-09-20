@@ -2,7 +2,7 @@
 	/**
 	 *  @package Wordpress
 	 *  @subpackage sousMazin
-	 *  @since sousMazin 0
+	 *  @since sousMazin 1.0
 	 */
 	get_header();
 		if ( have_posts() ) {
@@ -13,4 +13,3 @@
 		}
 	get_footer();
 ?>
-
