@@ -1,21 +1,21 @@
 sousMazin
 =========
-(*"under the rainclouds"*)
 
-This is an under-development theme built for WordPress 4.3+, designed and built by me, [**Willow Sells**](http://www.willowsells.com).
+This is an under-development theme built for WordPress 4.3+, designed and built by me, [**Willow Sells**](http://willowsells.com).
 
-This theme uses a [WTFPL](http://www.wtfpl.net/), so feel free to use the theme, copy the code or design, do pretty much whatever you want.
+This theme uses the [WTFPL](http://www.wtfpl.net/).
+USE AT YOUR OWN RISK. I AM NOT RESPONSIBLE FOR... anything from which I can legally divest myself of responsibility.
 
-NOTE: USE AT YOUR OWN RISK. This theme works for me; that doesn't mean it'll work for you. Additionally, I do not recommend attempting to use this theme if you are a plugin junky. I have not considered maximizing plugin compatibility in this theme. I am also prone to lecturing people who over-use plugins.
+This theme began years ago as both a very poorly-executed learning experience and an attempt to get into that blogging thing. Or maybe really just as something to entertain myself with while visiting family. Either way, the notion has always been that learning is great and sharing knowledge is great, et cetera. Use the whole theme, or whatever you want. Ask me why I did things the way I did, or see if there's any more interesting info about this theme or over at [my site](http://willowsells.com).
 
 sousMazin 1.0
 -------------------------
-I don't really do version numbers, but here I am, applying a version number to this theme.
+The previous "version" of sousMazin worked enough to be used, but only barely. Virtually all of that code has been trashed -- however, sousMazin 1.0 is being built with the similar design principles to sousMazin, especially visual design principles.
 
-sousMazin 1.0 has many of the same front-end design aspects of the original sousMazin theme. However, the previous theme was less like a WordPress theme and more like a nonsensical combination of lines of code that just happened to do the things I needed them to do. The original sousmazin theme was written, for the most part... a long time ago.
-
-Suffice it to say, sousMazin 1.0 is much more like a WordPress theme done right.
+In theory, when this is done, it'll be sousMazin 1.0. Or sousMazin 2.0, if you consider the terrible but technically functioning previous version. I've heard people talk about the importance of well-structured version numbers, but really, I don't think any of that is exactly relevant here.
 
 ### Current Theme Features
 
 ** This theme is in an exceptionally bare-bones state at this time. This list will be filled out as work continues. **
+
+- Responsive Layout

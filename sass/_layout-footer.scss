@@ -1,0 +1,23 @@
+footer {
+  color: $footercolor;
+  font-family: $footerfont;
+  font-size: 1.8rem;
+  text-align: center;
+}
+#footer-menu {
+  font-size: 1.6rem;
+  li {
+    display: inline-block;
+    padding: 1.5rem;
+  }
+}
+#theme {
+  i {
+    font-size: 3rem;
+    margin: 2rem 0 1rem;
+    display: block;
+    &:hover {
+      color: $repocolor;
+    }
+  }
+}

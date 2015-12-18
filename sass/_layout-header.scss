@@ -1,0 +1,56 @@
+#banner {
+  margin-top: 3.3rem;
+  margin-bottom: 9rem;
+  padding: 1rem 0;
+  font-family: $bannerfont;
+  color: $bannercolor;
+  text-align: center;
+}
+#sitename {
+  font-size: 5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #BABABA;
+  span {
+    font-size: 1.5em;
+  }
+}
+#header-menu {
+  position: relative;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  text-align: center;
+  border-top: solid 1px;
+  margin: 2.5rem 0 0;
+  li {
+    padding: 1.5rem .75rem;
+    letter-spacing: 3px;
+    display: inline-block;
+    &:hover .sub-menu {
+      max-height: 10rem;
+    }
+  }
+  .sub-menu {
+    position: absolute;
+    background-color: white;
+    font-style: italic;
+    left: 0;
+    width: 100%;
+    top: 100%;
+    border-bottom: solid 1px;
+		overflow: hidden;
+		max-height: 0;
+    @include crosstransition(null,max-height,1s,ease-in-out,null);
+    li:hover {
+      color: $menuhighlight;
+    }
+  }
+}
+#tagline {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 3rem 0;
+}
+.outerbutton, .innerbutton {
+  display: none;
+}

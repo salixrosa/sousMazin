@@ -6,5 +6,4 @@
 
   ga('create', 'UA-44186708-1', 'willowsells.com');
   ga('send', 'pageview');
-
 </script>

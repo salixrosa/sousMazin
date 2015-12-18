@@ -1,0 +1,21 @@
+/*
+ * Theme Name: sousMazin 1.0
+ * Author: Willow Sells
+ * Author URI: http://www.willowsells.com
+ * Description: This clean theme is perfect for a simple blog-and-about-me type of site.
+ * Version: 1.0
+ * License: WTFPL
+ * License URI: http://www.wtfpl.net
+ */
+
+ @import 'reset';
+
+ @import 'helpers/*';
+ @import 'components/*';
+ @import 'views/*';
+
+
+ @import 'layout';
+ @import 'layout-header';
+ @import 'layout-header-R';
+ @import 'layout-footer';

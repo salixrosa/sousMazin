@@ -5,16 +5,17 @@
  *  @since sousMazin 1.0
  */
 ?>
+
+			<footer>
+				<?php
+				wp_nav_menu( array(
+					'theme_location' 	=> 'footer-menu',
+					'container' 			=> '',
+					'menu_id'					=> 'footer-menu',
+				));
+				?>
+				<p id="theme"><a href="https://github.com/salixrosa/sousMazin"><i class="fa fa-github"></i></a> sousMazin</p>
+			</footer>
 		</div>
-		<footer>
-			<?php wp_nav_menu( array(
-				'theme_location' 	=> 'footer-menu',
-				'fallback_cb' 		=> false,
-				'container' 			=> '',
-				'menu_class' 			=> 'main',
-				'menu_id' 				=> 'media'
-			)); ?>
-			<p> sousMazin 1.0 </p>
-		</footer>
 	</body>
 </html>

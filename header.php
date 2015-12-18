@@ -17,25 +17,24 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-		<div id="center">
-			<header>
-				<div id="sitename"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo htmlspecialchars_decode(get_bloginfo('name')); ?></a></div>
-				<div id="headerfloat">
-					<nav>
-						<?php
-							if ( has_nav_menu( 'header-menu' ) ) {
-								wp_nav_menu( array(
-									'theme_location' 	=> 'header-menu',
-									'container' 			=> '',
-									'menu_class' 			=> 'main',
-									'before' 					=> "<div class='outerbutton'><div class='innerbutton'></div></div>"
-								));
-							}
-						?>
-					</nav>
-					<p id="tagline">
-						<?php bloginfo( 'description' ); ?>
-					</p>
-				</div>
 
+		<div class="center">
+
+			<header id="banner">
+				<div id="sitename"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo htmlspecialchars_decode(get_bloginfo('name')); ?></a></div>
+				<nav role="navigation">
+					<?php
+						if ( has_nav_menu( 'header-menu' ) ) {
+							wp_nav_menu( array(
+								'theme_location' 	=> 'header-menu',
+								'container' 			=> '',
+								'menu_id'					=> 'header-menu',
+								'walker'					=> new Mobile_Button_Enabled_Menu
+							));
+						}
+					?>
+				</nav>
+				<p id="tagline">
+					<?php bloginfo( 'description' ); ?>
+				</p>
 			</header>

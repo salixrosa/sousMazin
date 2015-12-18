@@ -1,0 +1,24 @@
+/* Animation Mixins */
+@mixin crosstransition($transition,$one,$two,$three,$four){
+  -webkit-transition#{$transition}: $one, $two, $three, $four;
+  -moz-transition#{$transition}: $one, $two, $three, $four;
+  -o-transition#{$transition}: $one, $two, $three, $four;
+  transition#{$transition}: $one, $two, $three, $four;
+}
+
+/* Media Query Mixins */
+@mixin respond-to($eq,$width) {
+  @media only screen and (#{$eq}: $width){
+    @content;
+  }
+}
+@mixin respond-or($ea,$a,$eb,$b) {
+  @media only screen and (#{$ea}: $a), only screen and (#{$eb}: $b){
+    @content;
+  }
+}
+@mixin respond-and($ec,$c,$ed,$d) {
+  @media only screen and (#{$ec}: $c) and (#{$ed}: $d) {
+    @content;
+  }
+}
