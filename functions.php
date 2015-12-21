@@ -55,8 +55,11 @@ foreach(glob(get_template_directory() . '/includes/*.php') as $includes_file){
 }
 
 function sousmazin_filter_title($title){ // Allows users to set sitenames with html encoding for the banner, without messing up title tags.
-  return strip_tags(html_entity_decode($title));
+	foreach($title as $key => $value){
+		$title[$key] = strip_tags(html_entity_decode($value));
+	}
+	return $title;
 }
-add_filter('wp_title', 'sousmazin_filter_title');
+add_filter('document_title_parts', 'sousmazin_filter_title', 10, 2);
 
 ?>
