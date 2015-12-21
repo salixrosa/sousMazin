@@ -22,11 +22,9 @@
 			</time>
 		</div>
 		<div class="postcontent">
-	<?php
-
-			the_content();
-
-	?>
+			<a href="<?php the_permalink(); ?>" class="tosingle">
+				<?php the_content(); ?>
+			</a>
 		</div>
 	</article>
 

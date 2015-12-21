@@ -11,11 +11,9 @@
 
 	<article>
 		<div class="postmeta">
-			<a href="<?php the_permalink(); ?>" class="tosingle">
-				<h1>
-					<?php the_title(); ?>
-				</h1>
-			</a>
+			<h1>
+				<?php the_title(); ?>
+			</h1>
 
 			<time datetime='<?php echo get_the_date('Y-m-d'); ?>'>
 				<?php echo strtolower(get_the_date()); ?>

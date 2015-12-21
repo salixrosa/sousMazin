@@ -8,10 +8,14 @@ footer {
   font-size: 1.6rem;
   li {
     display: inline-block;
-    padding: 1.5rem;
+    padding-left: 3rem;
+    &:first-child {
+      padding-left: 0;
+    }
   }
 }
 #theme {
+  margin-top: 4rem;
   i {
     font-size: 3rem;
     margin: 2rem 0 1rem;

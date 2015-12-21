@@ -1,0 +1,48 @@
+.postmeta, .postcontent {
+  display: inline-block;
+  vertical-align:top;
+}
+.postcontent {
+  width: 67%;
+  padding-bottom: 3rem;
+  margin-bottom: 5rem;
+  p {
+    padding: .75rem 0;
+    font-size: 1.5rem;
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}
+.postmeta {
+  width: 28%;
+  margin: 0 3rem 1rem 0;
+  color: $posttitlecolor;
+  font-size: 1.6rem;
+  letter-spacing: .5px;
+  h1 {
+    font-family: $posttitlefont;
+    font-size: 1.8rem;
+  }
+  time {
+    display: block;
+    padding: 1rem 0 1.2rem;
+    font-size: 1.35rem;
+  }
+}
+
+@include respond-to(max-width,675px) {
+  .postmeta, .postcontent {
+    display: block;
+    width: 100%;
+  }
+  .postcontent {
+    border-bottom: solid 2px #D7D7D7;
+  }
+  .postmeta {
+    text-align: center;
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}
