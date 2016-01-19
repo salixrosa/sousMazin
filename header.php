@@ -21,7 +21,11 @@
 		<div class="center">
 
 			<header id="banner">
-				<div id="sitename"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo htmlspecialchars_decode(get_bloginfo('name')); ?></a></div>
+				<h1>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+						<?php if(function_exists('sM_banner_text')){ sM_banner_text(); } else echo get_bloginfo('name'); ?>
+					</a>
+				</h1>
 				<nav role="navigation">
 					<?php
 						if ( has_nav_menu( 'header-menu' ) ) {

@@ -5,7 +5,6 @@
  *  @since sousMazin 1.0
  */
 ?>
-
 			<footer>
 				<?php
 				wp_nav_menu( array(
@@ -16,6 +15,8 @@
 				?>
 				<p id="theme"><a href="https://github.com/salixrosa/sousMazin"><i class="fa fa-github"></i></a> sousMazin</p>
 			</footer>
+
 		</div>
+		
 	</body>
 </html>

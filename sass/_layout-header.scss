@@ -4,13 +4,13 @@
   font-family: $bannerfont;
   color: $bannercolor;
   text-align: center;
-}
-#sitename {
-  font-size: 5rem;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px #BABABA;
-  span {
-    font-size: 1.5em;
+  h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #BABABA;
+    span {
+      font-size: 1.5em;
+    }
   }
 }
 #header-menu {

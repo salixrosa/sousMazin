@@ -10,23 +10,24 @@
 	?>
 
 	<article>
-		<div class="postmeta">
-			<a href="<?php the_permalink(); ?>" class="tosingle">
-				<h1>
+		<header class="postmeta">
+
+			<h2>
+				<a href="<?php the_permalink(); ?>" class="tosingle">
 					<?php the_title(); ?>
-				</h1>
-			</a>
+				</a>
+			</h2>
 
 			<time datetime='<?php echo get_the_date('Y-m-d'); ?>'>
 				<?php echo strtolower(get_the_date()); ?>
 			</time>
-		</div>
+
+		</header>
+
 		<div class="postcontent">
-	<?php
-
-			the_content();
-
-	?>
+			<a href="<?php the_permalink(); ?>" class="tosingle">
+				<?php the_content(); ?>
+			</a>
 		</div>
 	</article>
 

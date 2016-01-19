@@ -6,7 +6,7 @@ This is an under-development theme built for WordPress 4.3+, designed and built 
 This theme uses the [WTFPL](http://www.wtfpl.net/).
 USE AT YOUR OWN RISK. I AM NOT RESPONSIBLE FOR... anything from which I can legally divest myself of responsibility.
 
-This theme began years ago as both a very poorly-executed learning experience and an attempt to get into that blogging thing. Or maybe really just as something to entertain myself with while visiting family. Either way, the notion has always been that learning is great and sharing knowledge is great, et cetera. Use the whole theme, or whatever you want. Ask me why I did things the way I did, or see if there's any more interesting info about this theme or over at [my site](http://willowsells.com).
+This theme began years ago as both a very poorly-executed learning experience and an attempt to get into that blogging thing. Or maybe really just as something to entertain myself with while visiting family. Either way, the notion has always been that learning is great and sharing knowledge is great, et cetera. Use the whole theme, or whatever you want. Ask me why I did things the way I did, or see if there's any more interesting info about this theme over at [my site](http://willowsells.com).
 
 sousMazin 1.0
 -------------------------
@@ -18,4 +18,6 @@ In theory, when this is done, it'll be sousMazin 1.0. Or sousMazin 2.0, if you c
 
 ** This theme is in an exceptionally bare-bones state at this time. This list will be filled out as work continues. **
 
-- Responsive Layout
+- Responsive Layout featuring a two dimensional menu using a button-based design for small viewports
+- Modularized Sass w/ minification (great for people who can compile Sass; terrible for anyone who can't but wants to tweak this theme for their own use)
+- Minimization of page bloat, including through the removal of default WP features

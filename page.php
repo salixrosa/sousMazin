@@ -11,23 +11,13 @@
 
 	<article>
 		<header class="postmeta">
-
 			<h2>
-				<a href="<?php the_permalink(); ?>" class="tosingle">
-					<?php the_title(); ?>
-				</a>
+				<?php the_title(); ?>
 			</h2>
-
-			<time datetime='<?php echo get_the_date('Y-m-d'); ?>'>
-				<?php echo strtolower(get_the_date()); ?>
-			</time>
-
 		</header>
 
 		<div class="postcontent">
-			<a href="<?php the_permalink(); ?>" class="tosingle">
-				<?php the_content(); ?>
-			</a>
+			<?php the_content(); ?>
 		</div>
 	</article>
 
