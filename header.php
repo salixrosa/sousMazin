@@ -13,7 +13,10 @@
 	<head>
 		<meta name="viewport" content="initial-scale=1.0,width=device-width">
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
-		<?php wp_head(); ?>
+		<?php
+		if(file_exists(get_template_directory() . "/analyticstracking.php")){include_once("analyticstracking.php");}
+		wp_head();
+		?>
 	</head>
 
 	<body <?php body_class(); ?>>
