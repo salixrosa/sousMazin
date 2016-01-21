@@ -11,9 +11,9 @@
 
 	<article>
 		<header class="postmeta">
-			<h2>
+			<h1>
 				<?php the_title(); ?>
-			</h2>
+			</h1>
 		</header>
 
 		<div class="postcontent">
