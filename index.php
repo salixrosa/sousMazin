@@ -25,9 +25,7 @@
 		</header>
 
 		<div class="postcontent">
-			<a href="<?php the_permalink(); ?>" class="tosingle">
-				<?php the_content(); ?>
-			</a>
+			<?php the_content(); ?>
 		</div>
 	</article>
 
