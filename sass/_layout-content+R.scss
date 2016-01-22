@@ -39,6 +39,16 @@
   }
 }
 
+hr {
+  border: solid 1px lightgray;
+  border: 1px 0 0;
+  margin: 3rem 0;
+}
+
+p.push {
+  margin-bottom: 3rem;
+}
+
 @include respond-to(max-width,675px) {
   .postmeta, .postcontent {
     display: block;
