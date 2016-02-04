@@ -1,11 +1,11 @@
 footer {
   color: $footercolor;
-  font-family: $footerfont;
   font-size: 1.8rem;
   text-align: center;
   padding: 5rem 0;
 }
 #footer-menu {
+  font-family: $footerfont;
   font-size: 1.6rem;
   li {
     display: inline-block;
@@ -16,13 +16,15 @@ footer {
   }
 }
 #theme {
-  margin-top: 4rem;
+  color: $repocolor;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  margin: 8rem 0 4rem;
   i {
-    font-size: 3rem;
-    margin: 2rem 0 1rem;
-    display: block;
-    &:hover {
-      color: $repocolor;
-    }
+    font-size: 3.3rem;
+    padding-bottom: .5rem;
+  }
+  &:hover {
+      color: $repohoverc;
   }
 }

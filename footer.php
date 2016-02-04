@@ -13,10 +13,16 @@
 					'menu_id'					=> 'footer-menu',
 				));
 				?>
-				<p id="theme"><a href="https://github.com/salixrosa/sousMazin"><i class="fa fa-github"></i></a> sousMazin</p>
+				<p id="theme">
+					<a href="https://github.com/salixrosa/sousMazin">
+						<i class="fa fa-github"></i>
+						<br>
+						sousMazin
+					</a>
+				</p>
 			</footer>
 
 		</div>
-		
+
 	</body>
 </html>
