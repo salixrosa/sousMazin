@@ -49,6 +49,14 @@ p.push {
   margin-bottom: 3rem;
 }
 
+.fifty {
+  font-size: 150%;
+}
+.contenta {
+  color: $contentacolor;
+}
+
+
 @include respond-to(max-width,675px) {
   .postmeta, .postcontent {
     display: block;
