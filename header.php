@@ -24,11 +24,11 @@
 		<div class="center">
 
 			<header id="banner">
-				<h1>
+				<?php echo is_front_page() ? "<h1>" : "<h2>" ; ?>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 						<?php if(function_exists('sM_banner_text')){ sM_banner_text(); } else echo get_bloginfo('name'); ?>
 					</a>
-				</h1>
+				<?php echo is_front_page() ? "</h1>" : "</h2>" ; ?>
 				<nav role="navigation">
 					<?php
 						if ( has_nav_menu( 'header-menu' ) ) {

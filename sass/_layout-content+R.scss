@@ -56,7 +56,6 @@ p.push {
   color: $contentacolor;
 }
 
-
 @include respond-to(max-width,675px) {
   .postmeta, .postcontent {
     display: block;
