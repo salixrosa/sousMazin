@@ -36,7 +36,7 @@ function sousMazin_fonts() {
 
 function sousMazin_scripts() {
 	wp_enqueue_style( 'sousMazin_style', get_stylesheet_uri(), array(), '20151218' );
-  wp_enqueue_style('sousMazin_fonts', sousMazin_fonts(), array(), null );
+  wp_enqueue_style( 'sousMazin_fonts', sousMazin_fonts(), array(), null );
 	wp_enqueue_style( 'fontawesome', "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" );
 }
 add_action( 'wp_enqueue_scripts', 'sousMazin_scripts' );

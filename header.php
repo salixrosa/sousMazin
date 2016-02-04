@@ -35,8 +35,7 @@
 							wp_nav_menu( array(
 								'theme_location' 	=> 'header-menu',
 								'container' 			=> '',
-								'menu_id'					=> 'header-menu',
-								'walker'					=> new Mobile_Button_Enabled_Menu
+								'menu_id'					=> 'header-menu'
 							));
 						}
 					?>
