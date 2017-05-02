@@ -8,24 +8,41 @@ article {
 .postcontent {
   width: 67%;
   padding-bottom: 5rem;
-  p {
-    padding: 1rem 0;
-    font-size: 1.5rem;
-    line-height: 1.75em;
-    &:first-child {
-      padding-top: 0;
-    }
-    a {
-      color: $contentacolor;
+  font-size: 1.5rem;
+  line-height: 1.75em;
+
+  a {
+    color: $contentacolor;
+  }
+
+  p, > ul { // The top-level UL element in the content, as well as any P elements, need to use margins instead of padding so that any header elements above can dictate the entirety of the spacing
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  li ul { // Nest ULs need fancy styling
+    padding-bottom: .5rem;
+    li {
+      list-style: circle outside;
+      margin-left: 2rem;
+      line-height: 1.35em;
     }
   }
+
   h2, h3 {
-    padding-top: 1rem;
+    margin: 1rem 0;
     letter-spacing: 1px;
     word-spacing: 2px;
     color: $contentheadercolor;
   }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
 }
+
 .postmeta {
   width: 28%;
   margin: 0 3rem 1rem 0;
