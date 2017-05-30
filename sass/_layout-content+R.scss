@@ -15,11 +15,17 @@ article {
     color: $contentacolor;
   }
 
+  img {
+    width: 100%;
+    border: solid 1px gray;
+    margin: 1rem 0;
+  }
+
+  // Below is both for p spacing within content and for displaying nested lists in content!
   p, > ul { // The top-level UL element in the content, as well as any P elements, need to use margins instead of padding so that any header elements above can dictate the entirety of the spacing
     margin-top: 1rem;
     padding-bottom: 1rem;
   }
-
   li ul { // Nest ULs need fancy styling
     padding-bottom: .5rem;
     li {
