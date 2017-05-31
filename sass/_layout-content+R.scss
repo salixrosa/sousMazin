@@ -1,12 +1,10 @@
+code {
+  font-family: monospace;
+}
 article {
   margin-bottom: 6rem;
 }
-.postmeta, .postcontent {
-  display: inline-block;
-  vertical-align:top;
-}
 .postcontent {
-  width: 67%;
   padding-bottom: 5rem;
   font-size: 1.5rem;
   line-height: 1.75em;
@@ -50,8 +48,11 @@ article {
 }
 
 .postmeta {
-  width: 28%;
-  margin: 0 3rem 1rem 0;
+  width: 35%;
+  text-align: center;
+  margin: 0 auto 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: solid 1px gray;
   color: $posttitlecolor;
   letter-spacing: .5px;
   h1, h2 {

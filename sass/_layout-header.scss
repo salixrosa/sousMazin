@@ -1,5 +1,5 @@
 #banner {
-  margin: 1rem 0 7rem;
+  margin: 1rem 0 10rem;
   padding: 1rem 0;
   font-family: $bannerfont;
   color: $bannercolor;
@@ -12,36 +12,57 @@
       font-size: 1.5em;
     }
   }
+  nav { // this guy actually wraps #header-menu below, but we don't want our output CSS getting too messy so we keep IDs at the top
+    height: 5rem; // the actual # here only matters a little for spacing, really we just need a general place-holder to keep content from shifting
+  }
 }
+
 #header-menu {
-  position: relative;
   font-size: 1.8rem;
   letter-spacing: 3px;
   text-align: center;
   border: solid 1px;
   border-width: 1px 0;
   margin: 2.5rem 0 0;
+  padding: 1rem 0;
+  background-color: $bodybgc;
+  position: relative; // puts on different z-level, otherwise would show below elements following in DOM
   li {
-    padding: 1.5rem 1.75rem;
+    padding: 1rem 1.75rem;
     letter-spacing: 3px;
+    vertical-align: top;
     display: inline-block;
+    text-align: left;
+    position: relative;
     &:hover .sub-menu {
       max-height: 10rem;
+      overflow: visible;
     }
   }
   .sub-menu {
-    position: absolute;
     background-color: white;
-    font-style: italic;
-    left: 0;
     width: 100%;
     top: 100%;
-    border-bottom: solid 1px;
 		overflow: hidden;
 		max-height: 0;
-    @include crosstransition(null,max-height,1s,ease-in-out,null);
-    li:hover {
+    li {
+      height: 3rem;
+      width: 100%;
+      position: relative;
+      letter-spacing: 1px;
+      padding: 0;
       color: $menuhighlight;
+    }
+    a {
+      position: absolute;
+      width: 25rem;
+      left: 0;
+      bottom: 0;
+    }
+    @include crosstransition(null,max-height,1s,ease-in-out,null);
+    li:last-child {
+      padding-bottom: 5px;
+      border-bottom: solid 1px $bannercolor;
     }
   }
 }
@@ -53,4 +74,18 @@
 }
 .outerbutton, .innerbutton {
   display: none;
+}
+
+@include respond-to(max-width,675px) {
+  .menu-item-has-children:after {
+    font-family: 'FontAwesome';
+    font-size: .9em;
+    position: absolute;
+    top: .83em;
+    right: -2px;
+    content: '\f0da';
+  }
+  .menu-item-has-children:hover:after {
+    content: '\f0d7';
+  }
 }
