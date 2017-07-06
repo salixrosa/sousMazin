@@ -1,5 +1,7 @@
 code {
   font-family: monospace;
+  word-break: break-all;
+  float: left;
 }
 article {
   margin-bottom: 6rem;
@@ -23,6 +25,7 @@ article {
   p, > ul { // The top-level UL element in the content, as well as any P elements, need to use margins instead of padding so that any header elements above can dictate the entirety of the spacing
     margin-top: 1rem;
     padding-bottom: 1rem;
+    clear: both;
   }
   li ul { // Nest ULs need fancy styling
     padding-bottom: .5rem;
